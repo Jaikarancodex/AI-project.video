@@ -1,0 +1,217 @@
+Folder PATH listing for volume New Volume
+Volume serial number is D4CC-FDB2
+D:.
+¦   .gitignore
+¦   app.py
+¦   generate.py
+¦   LICENSE.txt
+¦   README.md
+¦   requirements.txt
+¦   structure.txt
+¦   train.py
+¦   
++---animatediff
+¦   +---data
+¦   ¦       dataset.py
+¦   ¦       
+¦   +---models
+¦   ¦   ¦   attention.py
+¦   ¦   ¦   motion_module.py
+¦   ¦   ¦   resnet.py
+¦   ¦   ¦   sparse_controlnet.py
+¦   ¦   ¦   unet.py
+¦   ¦   ¦   unet_blocks.py
+¦   ¦   ¦   
+¦   ¦   +---__pycache__
+¦   ¦           unet.cpython-310.pyc
+¦   ¦           
+¦   +---pipelines
+¦   ¦   ¦   pipeline_animation.py
+¦   ¦   ¦   
+¦   ¦   +---__pycache__
+¦   ¦           pipeline_animation.cpython-310.pyc
+¦   ¦           pipeline_animation.cpython-313.pyc
+¦   ¦           
+¦   +---utils
+¦           convert_from_ckpt.py
+¦           convert_lora_safetensor_to_diffusers.py
+¦           util.py
+¦           
++---configs
+¦   +---inference
+¦   ¦   ¦   inference-v1.yaml
+¦   ¦   ¦   inference-v2.yaml
+¦   ¦   ¦   inference-v3.yaml
+¦   ¦   ¦   
+¦   ¦   +---sparsectrl
+¦   ¦           image_condition.yaml
+¦   ¦           latent_condition.yaml
+¦   ¦           
+¦   +---prompts
+¦   ¦   +---1_animate
+¦   ¦   ¦       1_1_animate_RealisticVision.yaml
+¦   ¦   ¦       1_2_animate_FilmVelvia.yaml
+¦   ¦   ¦       1_3_animate_ToonYou.yaml
+¦   ¦   ¦       1_4_animate_MajicMix.yaml
+¦   ¦   ¦       1_5_animate_RcnzCartoon.yaml
+¦   ¦   ¦       1_6_animate_Lyriel.yaml
+¦   ¦   ¦       1_7_animate_Tusun.yaml
+¦   ¦   ¦       
+¦   ¦   +---2_motionlora
+¦   ¦   ¦       2_motionlora_RealisticVision.yaml
+¦   ¦   ¦       
+¦   ¦   +---3_sparsectrl
+¦   ¦           3_1_sparsectrl_i2v.yaml
+¦   ¦           3_2_sparsectrl_rgb_RealisticVision.yaml
+¦   ¦           3_3_sparsectrl_sketch_RealisticVision.yaml
+¦   ¦           
+¦   +---training
+¦       +---v1
+¦               image_finetune.yaml
+¦               training.yaml
+¦               
++---models
+¦   ¦   unet.py
+¦   ¦   
+¦   +---DreamBooth_LoRA
+¦   ¦       Put personalized T2I checkpoints here.txt
+¦   ¦       
+¦   +---MotionLoRA
+¦   ¦       Put MotionLoRA checkpoints here.txt
+¦   ¦       
+¦   +---Motion_Module
+¦   ¦       motion_module.ckpt
+¦   ¦       Put motion module checkpoints here.txt
+¦   ¦       
+¦   +---StableDiffusion
+¦           model.ckpt
+¦           Put diffusers stable-diffusion-v1-5 repo here.txt
+¦           
++---scripts
+¦       animate.py
+¦       
++---__assets__
+    +---animations
+    ¦   +---compare
+    ¦   ¦       ffmpeg
+    ¦   ¦       new_0.gif
+    ¦   ¦       new_1.gif
+    ¦   ¦       new_2.gif
+    ¦   ¦       new_3.gif
+    ¦   ¦       old_0.gif
+    ¦   ¦       old_1.gif
+    ¦   ¦       old_2.gif
+    ¦   ¦       old_3.gif
+    ¦   ¦       
+    ¦   +---model_01
+    ¦   ¦       01.gif
+    ¦   ¦       02.gif
+    ¦   ¦       03.gif
+    ¦   ¦       04.gif
+    ¦   ¦       
+    ¦   +---model_02
+    ¦   ¦       01.gif
+    ¦   ¦       02.gif
+    ¦   ¦       03.gif
+    ¦   ¦       04.gif
+    ¦   ¦       
+    ¦   +---model_03
+    ¦   ¦       01.gif
+    ¦   ¦       02.gif
+    ¦   ¦       03.gif
+    ¦   ¦       04.gif
+    ¦   ¦       
+    ¦   +---model_04
+    ¦   ¦       01.gif
+    ¦   ¦       02.gif
+    ¦   ¦       03.gif
+    ¦   ¦       04.gif
+    ¦   ¦       
+    ¦   +---model_05
+    ¦   ¦       01.gif
+    ¦   ¦       02.gif
+    ¦   ¦       03.gif
+    ¦   ¦       04.gif
+    ¦   ¦       
+    ¦   +---model_06
+    ¦   ¦       01.gif
+    ¦   ¦       02.gif
+    ¦   ¦       03.gif
+    ¦   ¦       04.gif
+    ¦   ¦       
+    ¦   +---model_07
+    ¦   ¦       01.gif
+    ¦   ¦       02.gif
+    ¦   ¦       03.gif
+    ¦   ¦       04.gif
+    ¦   ¦       init.jpg
+    ¦   ¦       
+    ¦   +---model_08
+    ¦   ¦       01.gif
+    ¦   ¦       02.gif
+    ¦   ¦       03.gif
+    ¦   ¦       04.gif
+    ¦   ¦       
+    ¦   +---motion_lora
+    ¦   ¦   +---model_01
+    ¦   ¦   ¦       01.gif
+    ¦   ¦   ¦       02.gif
+    ¦   ¦   ¦       03.gif
+    ¦   ¦   ¦       04.gif
+    ¦   ¦   ¦       05.gif
+    ¦   ¦   ¦       06.gif
+    ¦   ¦   ¦       07.gif
+    ¦   ¦   ¦       08.gif
+    ¦   ¦   ¦       
+    ¦   ¦   +---model_02
+    ¦   ¦           01.gif
+    ¦   ¦           02.gif
+    ¦   ¦           03.gif
+    ¦   ¦           04.gif
+    ¦   ¦           05.gif
+    ¦   ¦           06.gif
+    ¦   ¦           07.gif
+    ¦   ¦           08.gif
+    ¦   ¦           
+    ¦   +---motion_xl
+    ¦   ¦       01.gif
+    ¦   ¦       02.gif
+    ¦   ¦       03.gif
+    ¦   ¦       
+    ¦   +---v3
+    ¦           animation_fireworks.gif
+    ¦           animation_sunset.gif
+    ¦           sketch_boy.gif
+    ¦           sketch_city.gif
+    ¦           
+    +---demos
+    ¦   +---image
+    ¦   ¦       interpolation_1.png
+    ¦   ¦       interpolation_2.png
+    ¦   ¦       low_fps_1.png
+    ¦   ¦       low_fps_2.png
+    ¦   ¦       low_fps_3.png
+    ¦   ¦       low_fps_4.png
+    ¦   ¦       painting.png
+    ¦   ¦       prediction_1.png
+    ¦   ¦       prediction_2.png
+    ¦   ¦       prediction_3.png
+    ¦   ¦       prediction_4.png
+    ¦   ¦       RealisticVision_firework.png
+    ¦   ¦       RealisticVision_sunset.png
+    ¦   ¦       
+    ¦   +---scribble
+    ¦           scribble_1.png
+    ¦           scribble_2_1.png
+    ¦           scribble_2_2.png
+    ¦           scribble_2_3.png
+    ¦           scribble_2_readme.png
+    ¦           
+    +---docs
+    ¦       animatediff.md
+    ¦       gallery.md
+    ¦       
+    +---figs
+            adapter_explain.png
+            gradio.jpg
+            
